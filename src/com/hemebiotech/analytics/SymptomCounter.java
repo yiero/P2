@@ -2,7 +2,11 @@ package com.hemebiotech.analytics;
 
 import java.io.FileWriter;
 import java.util.TreeMap;
-
+/**
+ * This class will sort and count symptoms , and write them on a file 
+ * @author Admin
+ *
+ */
 public class SymptomCounter {
 
 	TreeMap<String, Integer> sort = new TreeMap<>();
@@ -10,7 +14,7 @@ public class SymptomCounter {
 	/**
 	 * We are using a TreeMap to sort symptoms
 	 * 
-	 * @param line is the name of the first line in the file
+	 * @param line is the name of symptoms
 	 * he is used for parameter in the method countSymptoms
 	 */
 	public void countSymptoms (String line) {

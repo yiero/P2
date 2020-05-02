@@ -9,7 +9,7 @@ public class Main {
 		 * Declaration, assignment and instantiation of the class AnalyticsCounter
 		 * In second times, use the method analyzeFile()
 		 * 
-		 * @throws 
+		 * 
 		 */
 
 		AnalyticsCounter analyticsCounter = new AnalyticsCounter();
