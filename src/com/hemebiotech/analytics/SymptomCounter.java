@@ -33,6 +33,7 @@ public class SymptomCounter {
 	} 
 	/**
 	 * Show us all symptoms sorted alphabetically with the order of occurrence in an file who will created at runtime of the program 
+	 * We are using two try/catch, for create the file and close him
 	 */
 	public void showResult() {
 		FileWriter writer = null;

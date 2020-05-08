@@ -10,6 +10,7 @@ public class AnalyticsCounter {
 	/**
 	 * 
 	 * We got a list of String which contains symptoms from the file "Symptoms.txt"
+	 * using two method of SymptomCounter to sort and show all the symptoms
 	 * 
 	 */
 	public void analyzeFile() {
