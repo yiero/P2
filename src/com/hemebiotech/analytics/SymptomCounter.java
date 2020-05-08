@@ -1,6 +1,7 @@
 package com.hemebiotech.analytics;
 
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.TreeMap;
 /**
  * This class will sort and count symptoms , and write them on a file 
@@ -30,17 +31,25 @@ public class SymptomCounter {
 
 		sort.put(line, newValue);
 	} 
-
+	/**
+	 * Show us all symptoms sorted alphabetically with the order of occurrence in an file who will created at runtime of the program 
+	 */
 	public void showResult() {
-/**
- * Show us all symptoms sorted alphabetically with the order of occurrence in an file who will created at runtime of the program 
- */
+		FileWriter writer = null;
 		try {
-			FileWriter writer = new FileWriter ("result.out");
-			writer.write(sort.toString());
-			writer.close();
-		} catch (Exception e) {
+			writer =  new FileWriter ("result.out");
+			writer.write(sort.toString());	
+		} catch (Exception e) { 
 			e.printStackTrace();
-		}
+		} finally { 
+			
+				try {
+					if (writer != null) {
+						writer.close();
+					}
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}		
 	}
 }
