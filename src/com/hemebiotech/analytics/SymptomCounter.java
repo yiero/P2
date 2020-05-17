@@ -41,8 +41,8 @@ public class SymptomCounter {
 			writer.write(sort.toString());	
 		} catch (Exception e) { 
 			e.printStackTrace();
-		} finally { 
 			
+		} finally { 
 				try {
 					if (writer != null) {
 						writer.close();
